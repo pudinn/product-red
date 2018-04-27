@@ -1,0 +1,398 @@
+html {
+  font-family: monospace;
+}
+
+p a:hover, li a:hover {
+  text-decoration: underline;
+}
+
+/* ----------Header------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #2e2e2d;
+  color: #f2f2f2;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: center;
+  padding: 0.6rem 0;
+  width: 960px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navigation li {
+  font-size: 0.8rem;
+  font-family: Arial;
+  display: inline-flex;
+  padding: 0 1rem;
+}
+
+.navigation li:hover {
+  opacity: 0.7;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.navigation img {
+  height: 1.25rem;
+  padding-right: 2rem;
+}
+
+.navigation img:hover {
+  opacity: 0.7;
+}
+
+.list-dropdown, .dropdown-content {
+  display: none;
+}
+
+@media only screen and (max-width:760px) {
+  header ul {
+    display: none;
+  }
+
+  .list-dropdown {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .list-dropdown img {
+    height: 1.25rem;
+  }
+
+  .dropdown-content li {
+    padding: 0.5rem;
+    display: block;
+  }
+
+  .list-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content {
+    margin-top: 8.25rem;
+    position: absolute;
+    background-color: black;
+  }
+
+  .dropdown-content a {
+    color: white;
+  }
+}
+
+/*----------Banner-------------*/
+
+.banner {
+  width: 100%;
+  height: 960px;
+  background-image: url(../media/product-red.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.product-red {
+  margin: 0 60%;
+  width: 480px;
+}
+
+.product-red p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 400;
+}
+
+.product-red .description {
+  font-size: 5rem;
+  width: 480px;
+  text-align: center;
+  color: #f2f2f2;
+  font-weight: bold;
+  padding-top: 20%;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+.product-red {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:760px) {
+  .banner {
+    height: 480px;
+  }
+
+  .product-red {
+    margin: 0 auto;
+  }
+  .product-red h1 {
+    font-size: 3rem;
+  }
+  .product-red p {
+    font-size: 1rem;
+  }
+}
+}
+
+/*----------Main-------------*/
+
+.main {
+  background-color: #ffffff;
+}
+
+.site-container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main .site-container {
+  margin-top: 10rem;
+}
+
+.main .site-container img {
+  padding-bottom: 2rem;
+}
+
+.site-container .iphone-8, .apple-box {
+  display: flex;
+  width: 100%;
+}
+
+.iphone-8 .iphone-red {
+  width: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apple-info {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.iphone-8 .apple-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.apple-info h2 {
+  font-family: Arial;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #e85d00;
+  color: #e85d00;
+}
+
+.heading-iphone {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.725rem;
+}
+
+.heading-iphone h1 {
+  padding: 13px 7px 13px 0;
+  font-family: Arial;
+  color: #af1e2d;
+  font-size: 2.3rem;
+}
+
+.heading-iphone p {
+  font-size: 1.4rem;
+  margin-right: 1.4rem;
+}
+
+.heading-iphone a {
+  font-family: Arial;
+  color: blue;
+  text-decoration: none;
+}
+
+.apple-info h3 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.iphone-x .leather {
+  padding-top: 3rem;
+}
+
+.iphone-x p {
+  padding-top: 1rem;
+  font-family: Arial;
+  font-size: 1.2rem;
+}
+
+.iphone-x a {
+  color: blue;
+  text-decoration: none;
+}
+
+.one-dollar, .contribution {
+  margin-top: 7.350rem;
+}
+
+.bottom-review {
+  margin: 5rem auto;
+  width: 480px;
+  font-family: Arial;
+}
+
+.bottom-review h1 {
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+.bottom-review p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.bottom-review a {
+  text-decoration: none;
+  color: #af1e2d;
+}
+
+.countries {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-bottom-help {
+  width: 20%;
+  margin: 0 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.box-bottom-help img {
+  padding: 0 3rem;
+}
+
+.box-bottom-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+@media only screen and (max-width: 960px) {
+  .site-container {
+    width: 100%;
+  }
+  .site-container .iphone-8, .apple-box {
+    display: block;
+    width: 100%;
+  }
+
+  .heading-iphone {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .apple-info {
+    margin: 0 auto;
+  }
+
+  .heading-iphone p {
+    padding-bottom: 1.3rem;
+  }
+
+  .bottom-review {
+    width: 360px;
+  }
+  .bottom-review h1 {
+    font-size: 2rem;
+  }
+
+  .countries {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .box-bottom-help {
+    margin: 0 auto;
+  }
+
+  .box-bottom-help img {
+    padding: 0 0;
+  }
+
+  .box-bottom-help p {
+    padding-bottom: 2rem;
+  }
+
+  .box-bottom-arrow {
+    display: none;
+  }
+
+
+  }
+
+/*----------Footer-------------*/
+
+footer {
+  background-color: #f2f2f2;
+}
+
+#site-footer {
+  margin: 0 auto;
+}
+
+.logo-footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #383737;
+}
+
+.logo-footer img {
+  height: 30px;
+}
+
+.nav-footer {
+  display: flex;
+  width: 100%;
+}
+
+.box-footer {
+  text-align: left;
+  padding: 1rem;
+  width: 19%;
+  font-family: Arial;
+}
+
+.box-footer h4 {
+  font-size: 0.858rem;
+  color: black;
+  font-weight: bold;
+}
+
+.box-footer p {
+  padding-top: 1rem;
+  font-size: 0.858rem;
+}
+
+.box-footer a {
+  color: #383737;
+  text-decoration: none;
+}
+
+.box-footer .middle-content {
+  padding-top: 2rem;
+}
